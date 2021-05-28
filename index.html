@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Flappy Cinnah</title>
+  <meta name="description" content="Flappy Cinnah">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="head.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js"></script>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <script>
+    $(function () {
+      init()
+      // $( "canvas" ).on( "gameEnd", function(e) {
+      //     console.log('game over')
+      // });
+      $("canvas").trigger("gameEnd");
+
+    })
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <audio controls autoplay loop style="display: none;">
+      <source src="./sounds/bg-music.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+
+    <div class="canvas-container" id="game">
+      <canvas id="testCanvas" width="768" height="1024">
+      </canvas>
+      <div class="ad-container hidden-lg hidden-sm">
+
+        <div id='div-gpt-ad-1396403508853-3' style='width:160px; height:600px;'>
+        </div>
+      </div>
+      <div class="ad-container left hidden-lg hidden-sm">
+
+        <div id='div-gpt-ad-1396403508853-0' style='width:160px; height:600px;'>
+        </div>
+      </div>
+      <br><br>
+    </div>
+  </div>
+</body>
+
+</html>
